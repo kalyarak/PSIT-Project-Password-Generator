@@ -1,15 +1,25 @@
-## Welcome to GitHub Pages
+# Python Password Generator
 
-You can use the [editor on GitHub](https://github.com/kalyarak/PSIT-project-Password-Generator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### **เหตุผลที่เลือกทำ Project นี้คืออะไร**
+1. รหัสผ่านมีความคาดเดาได้ยาก เมื่อเทียบกับที่เราตั้งเอง
+2. สะดวกในการตั้งรหัสผ่าน
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### **ความน่าสนใจของ Project นี้คืออะไร**
+1. ช่วยให้รหัสผ่านมีความปลอดภัยมากขึ้น
+2. สามารถตั้งเงื่อนไขในการตั้งรหัสผ่าน
+3. สามารถป้องกันการเข้าถึงได้อย่างครอบคลุม เนื่องจากรหัสผ่านคาดเดาได้ยาก
 
+### **คาดว่าจะมีใครได้ประโยชน์จาก Project นี้บ้าง**
+- User ที่ต้องการตั้งรหัสผ่านในการ Login ที่คาดเดาได้ยาก
+
+### **ประโยชน์ที่คาดว่าจะได้รับจาก Project คืออะไร**
+1. รู้จัก Library อื่นๆของภาษา Python เพิ่มมากขึ้น
+2. ได้ฝึกการเขียนโค้ดภาษา Python
 ```markdown
 Syntax highlighted code block
+
 
 # Header 1
 ## Header 2
