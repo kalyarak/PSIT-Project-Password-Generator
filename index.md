@@ -19,7 +19,10 @@
 2. ได้ฝึกการเขียนโค้ดภาษา Python
 ```markdown
 Syntax highlighted code block
-
+|   รหัสนักศึกษา  |  ชื่อ - นามสกุล |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 # Header 1
 ## Header 2
