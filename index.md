@@ -17,34 +17,12 @@
 ### **ประโยชน์ที่คาดว่าจะได้รับจาก Project คืออะไร**
 1. รู้จัก Library อื่นๆของภาษา Python เพิ่มมากขึ้น
 2. ได้ฝึกการเขียนโค้ดภาษา Python
-```markdown
-Syntax highlighted code block
-|   รหัสนักศึกษา  |  ชื่อ - นามสกุล |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kalyarak/PSIT-project-Password-Generator/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+| รหัสนักศึกษา| ชื่อ - นามสกุล |    Github    |
+| :---         |     :---:      |          ---: |
+| 63070001   | นางสาวกชกร เขจรไชย     | [Kotchakorn63070001](https://github.com/Kotchakorn63070001) |
+| 63070007   | นางสาวกัลยรักษ์ ชุบผา     | [kalyarak](https://github.com/kalyarak) |
+| 63070029   | นางสาวชนิกา ปรีชาพลกุล     |[it63070029](https://github.com/it63070029)  |
+| 63070030  | นางสาวชนิกานต์ คำวงษ์     |[chanikarn030](https://github.com/chanikarn030)   |
+| 63070001   | นางสาวชนิสรา วัชรพลกุล     |[Chanisaranest](https://github.com/Chanisaranest)    |
