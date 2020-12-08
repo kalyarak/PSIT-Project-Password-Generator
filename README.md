@@ -28,4 +28,4 @@
 | 63070031   |นางสาวชนิสรา วัชรพลกุล     |[Chanisaranest](https://github.com/Chanisaranest)    |
 
 ### **Reference**
-(https://data-flair.training/blogs/python-password-generator/)
+https://data-flair.training/blogs/python-password-generator/
