@@ -27,5 +27,5 @@
 | 63070030   |นางสาวชนิกานต์ คำวงษ์     |[chanikarn030](https://github.com/chanikarn030)   |
 | 63070031   |นางสาวชนิสรา วัชรพลกุล     |[Chanisaranest](https://github.com/Chanisaranest)    |
 
-### **Reference อ้างอิงจาก :**
+### **อ้างอิง**
 https://data-flair.training/blogs/python-password-generator/
