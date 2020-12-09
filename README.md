@@ -29,3 +29,4 @@
 
 ### **อ้างอิง**
 https://data-flair.training/blogs/python-password-generator/
+https://www.geeksforgeeks.org/python-random-password-generator-using-tkinter/
