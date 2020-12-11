@@ -25,7 +25,7 @@
 | 63070007   |นางสาวกัลยรักษ์ ชุบผา     | [kalyarak](https://github.com/kalyarak) |
 | 63070029   |นางสาวชนิกา ปรีชาพลกุล     |[it63070029](https://github.com/it63070029)  |
 | 63070030   |นางสาวชนิกานต์ คำวงษ์     |[chanikarn030](https://github.com/chanikarn030)   |
-| 63070031   |นางสาวชนิสรา วัชรพลกุล     |[Chanisaranest](https://github.com/Chanisaranest)    |
+| 63070031   |นางสาวชนิสรา วัชรพรกุล     |[Chanisaranest](https://github.com/Chanisaranest)    |
 
 ### **อ้างอิง**
 https://data-flair.training/blogs/python-password-generator/
