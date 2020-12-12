@@ -4,41 +4,28 @@ import tkinter.font as font
 import random, string
 import pyperclip
 from tkinter.colorchooser import askcolor
-from PIL import ImageTk
 
-def getColor():
-    color = askcolor()
-    return color[-1]
-
-def storecolor():
-    store = getColor()
-    return store
-
-valu = storecolor()
 
 ###initialize window
 root =Tk()
-root.option_add("*Font",("Atari Classic",15))
-root.configure(background=getColor())
-# f1 = Frame(root, bg="green")
-# f1.grid(row=1, column=0)
-root.geometry("650x650")
+root.option_add("*Font",("Pixel LCD-7",20,'bold'))
+root.geometry("700x700")
+frameoption = Frame(root, background="#fd62ca")
+root.iconbitmap('Downloads\\password_generator\\password.ico')
 root.resizable(0,0)
-root.title("PASSWORD GENERATOR") 
-# root.wm_attributes("-alpha",1)
+root.title("PASSWORD GENERATOR")
+root.configure(background="#262335")
 
-
-
-
-Button(text='Color', command=getColor)
 
 #heading
-Label(root, text = 'PASSWORD GENERATOR' , font =('Arista 2.0 Alternate Regular',30),background=valu).pack(padx=20, pady=20)
-Label(root, text ='เจนและผองเพื่อน', font ='arial 20 bold', background=valu).pack(side = BOTTOM)
-Label(root, text ='EFGPKPGFE', font =('Mushroom Kingdom NBP Regular',30), background=valu).pack(side = BOTTOM)
+Label(root, text = 'PASSWORD GENERATOR' , font =('8BIT WONDER',25), fg="#fd62ca", background='#262335').pack(padx=20, pady=20)
+Label(root, text = '_'*350 , font =('8BIT WONDER',3), fg="#689fe4", background='#689fe4').pack()
+Label(root, text = '_'*350 , font =('8BIT WONDER',3), fg="#689fe4", background='#689fe4').pack(side = BOTTOM)
+Label(root, text ='เจนและผองเพื่อน', font ='arial 20 bold', background='#262335', fg='#31ffec').pack(side=BOTTOM)
+Label(root, text ='EFGPKPGFE', font =('Mushroom Kingdom NBP Regular',30), fg="#fd62ca", background="#262335").pack(side = BOTTOM)
 
 ###select password length
-Label(root, text = 'PASSWORD LENGTH').pack(padx=10, pady=10)
+Label(root, text ='PASSWORD LENGTH', font =('8BIT WONDER',15), fg="#31ffec", background='#262335').pack(padx=10, pady=10)
 pass_len = IntVar()
 Spinbox(root, from_ = 8, to_ = 32 , textvariable = pass_len , width = 15, font="arial 15 bold").pack(padx=5,pady=5)
 
@@ -47,10 +34,11 @@ var_up = IntVar()
 var_spe = IntVar()
 var_num = IntVar()
 
-Checkbutton(root, text='Upper?', variable=var_up).pack(padx=10, pady=5)
-Checkbutton(root, text='Lower?', variable=var_low).pack(padx=5,pady=5)
-Checkbutton(root, text='Special?', variable=var_spe).pack(padx=5,pady=5)
-Checkbutton(root, text='Number?', variable=var_num).pack(padx=5,pady=5)
+frameoption.pack(padx=10, pady=10)
+Checkbutton(frameoption, text='Upper  ?', variable=var_up, background='#fd62ca', fg="#1914e1").pack(padx=10, pady=5)
+Checkbutton(frameoption, text='Lower  ?', variable=var_low, background='#fd62ca', fg="#1914e1").pack(padx=5,pady=5)
+Checkbutton(frameoption, text='Special  ?', variable=var_spe, background='#fd62ca', fg="#1914e1").pack(padx=5,pady=5)
+Checkbutton(frameoption, text='Number  ?', variable=var_num, background='#fd62ca', fg="#1914e1").pack(padx=5,pady=5)
 
 #####define function
 pass_str = StringVar()
@@ -66,14 +54,14 @@ def Generator():
     pass_str.set(password)
 
 ###button
-Button(root, text = "GENERATE PASSWORD" , command = Generator ).pack(pady= 10)
+Button(root, text = "GENERATE PASSWORD" , command = Generator, font =('8BIT WONDER',15), fg="#ffffff", background='#689fe4').pack(pady= 10)
 
-Entry(root , textvariable = pass_str, font="arial 15 bold", fg="red").pack()
+Entry(root , textvariable = pass_str, fg="red", font =('Nerko One',20)).pack(pady=10)
 
 ########function to copy
 def Copy_password():
     pyperclip.copy(pass_str.get())
-Button(root, text = 'COPY TO CLIPBOARD', command = Copy_password).pack(pady=8)
+Button(root, text = 'COPY TO CLIPBOARD', command = Copy_password, font =('8BIT WONDER',15), fg="#ffffff", background='#689fe4').pack(pady=8)
 
 # loop to run program
 root.mainloop() 
