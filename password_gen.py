@@ -51,7 +51,7 @@ framebottom.grid(row=4,column=0, columnspan=5)
 
 
 #icon กะว่าจะขอให้เวลาจารย์เช็คโปรแกรมก็ให้โหลดลง download ละชื่อโฟลเดอร์เราคือ password_generator แต่ถ้ายุ่งมากก็ลบไอคอนได้เลย
-root.iconbitmap('Downloads\\password_generator\\password.ico')
+#root.iconbitmap('Downloads\\password_generator\\password.ico')
 root.resizable(0,0)
 root.title("PASSWORD GENERATOR")
 root.configure(background="#262335")
@@ -93,15 +93,24 @@ Checkbutton(frameoption, text='Number  ?', variable=var_num, background='#fd62ca
 #####define function
 pass_str = StringVar()
 
-
-
 def Generator():
-    low_letter = string.ascii_lowercase*var_low.get()
-    up_letter = string.ascii_uppercase*var_up.get()
-    special = '$#@!%&()'*var_spe.get()
-    number = string.digits*var_num.get()
-    all_char = list(low_letter+up_letter+special+number)
-    password = random.choices(all_char, k=pass_len.get())
+    low_letter = [string.ascii_lowercase]
+    up_letter = [string.ascii_uppercase]
+    special = '$@!%&-_'
+    number = [string.digits]
+    all_char = low_letter+up_letter+number
+    password = []
+    if var_num.get() or var_low.get() or var_up.get():
+        amount_special = random.choices(list(special), k=pass_len.get()//8*var_spe.get())
+        letter = random.choices(all_char, k=pass_len.get()-(pass_len.get()//8*var_spe.get()), weights=[var_low.get(), var_up.get(), var_num.get()])
+        for i in letter:
+            password += [random.choice(list(i))]
+        password = password+amount_special
+    elif var_spe.get():
+        password = random.choices(list(special), k=pass_len.get())
+    else:
+        password = ''
+    random.shuffle(password)
     password = ''.join(password)
     pass_str.set(password)
 
@@ -175,7 +184,7 @@ def Edit():
             password = password[:locate]+random_alpha.upper()+password[locate+1:]
         if status_special == 0 and len(password) >= 8:
             locate = random.randint(0, len(password))
-            spe = random.choice(list('$@!&_-.'))
+            spe = random.choice(list('$@!&_-'))
             password = password[:locate]+spe+password[locate:]
     if len(password) < length and last_check:
         number = random.choices(list(string.digits), k=abs(len(password)-length)-1)
