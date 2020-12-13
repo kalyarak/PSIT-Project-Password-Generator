@@ -210,3 +210,4 @@ Button(frameright3, text = 'COPY TO CLIPBOARD', command = Copy_newpassword, font
 
 # loop to run program
 root.mainloop() 
+
