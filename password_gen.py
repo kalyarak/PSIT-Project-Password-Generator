@@ -3,14 +3,11 @@ from tkinter import *
 import tkinter.font as font
 import random, string
 import pyperclip
-from tkinter.colorchooser import askcolor
-import tkinter.ttk
-
 
 ###initialize window
 root =Tk()
 root.option_add("*Font",("Pixel LCD-7",15,'bold'))
-root.geometry("720x780")
+root.geometry("750x780")
 
 #header frame
 frametop = Frame(root, background="#262335")
@@ -19,10 +16,8 @@ frametop.grid(row=0, column=0, columnspan=5)
 #random password frame
 frameleft1 = Frame(root, background="#262335")
 frameleft1.grid(row=1, column=0)
-
 frameoption = Frame(root, background="#fd62ca")
 frameoption.grid(row=2, column=0)
-
 frameleft2 = Frame(root, background="#262335")
 frameleft2.grid(row=3, column=0)
 
@@ -34,14 +29,11 @@ framemid1.grid(row=2, column=1)
 framemid2 = Frame(root,background="#262335")
 framemid2.grid(row=3, column=1)
 
-
 #edit password frame
 frameright1 = Frame(root,background="#262335")
 frameright1.grid(row=1,column=2)
-
 frameright2 = Frame(root,background="#262335")
 frameright2.grid(row=2,column=2)
-
 frameright3 = Frame(root,background="#262335")
 frameright3.grid(row=3,column=2)
 
@@ -64,7 +56,7 @@ canvas2 = Canvas(framemid2, width=10, height=165, background='white').pack()
 
 
 #heading
-Label(frametop, text = 'PASSWORD GENERATOR' , font =('8BIT WONDER',28), fg="#fd62ca", background='#262335').pack(padx=20, pady=20)
+Label(frametop, text = 'PASSWORD GENERATOR' , font =('8BIT WONDER',28), fg="#fd62ca", background='#262335').pack(pady=20, side=TOP)
 Label(frametop, text = '_'*380 , font =('8BIT WONDER',3), fg="#689fe4", background='#689fe4').pack()
 
 #credit
@@ -79,12 +71,12 @@ Label(frameleft1, text ='PASSWORD LENGTH', font =('8BIT WONDER',12), fg="#31ffec
 pass_len = IntVar()
 Spinbox(frameleft1, from_ = 8, to_ = 32 , textvariable = pass_len , width = 15, font="arial 15 bold").pack(pady=5)
 
+###select elements for password
 var_low = IntVar()
 var_up = IntVar()
 var_spe = IntVar()
 var_num = IntVar()
 
-# frameoption.pack(padx=10, pady=10)
 Checkbutton(frameoption, text='Upper  ?', variable=var_up, background='#fd62ca', fg="#1914e1").pack(padx=10, pady=5)
 Checkbutton(frameoption, text='Lower  ?', variable=var_low, background='#fd62ca', fg="#1914e1").pack(padx=5,pady=5)
 Checkbutton(frameoption, text='Special  ?', variable=var_spe, background='#fd62ca', fg="#1914e1").pack(padx=5,pady=5)
@@ -192,7 +184,7 @@ def Edit():
     newpass_str.set(password)
 
 #input old password
-Label(frameright1, text = 'EDIT PASSWORD', font =('8BIT WONDER',15), fg="#fd62ca", background='#262335').pack(padx=0, pady=10, side=TOP)
+Label(frameright1, text = 'EDIT PASSWORD', font =('8BIT WONDER',15), fg="#fd62ca", background='#262335').pack(pady=10, side=TOP)
 old_pass = StringVar()
 Label(frameright1, text ='PASSWORD LENGTH', font =('8BIT WONDER',12), fg="#31ffec", background='#262335').pack(padx=10, pady=10)
 pass_len1 = IntVar()
@@ -209,4 +201,4 @@ def Copy_newpassword():
 Button(frameright3, text = 'COPY TO CLIPBOARD', command = Copy_newpassword, font =('8BIT WONDER',12), fg="#ffffff", background='#689fe4').pack(pady=8)
 
 # loop to run program
-root.mainloop()
+root.mainloop() 
