@@ -209,5 +209,4 @@ def Copy_newpassword():
 Button(frameright3, text = 'COPY TO CLIPBOARD', command = Copy_newpassword, font =('8BIT WONDER',12), fg="#ffffff", background='#689fe4').pack(pady=8)
 
 # loop to run program
-root.mainloop() 
-
+root.mainloop()
