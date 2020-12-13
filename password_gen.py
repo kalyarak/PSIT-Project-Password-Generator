@@ -8,6 +8,9 @@ import pyperclip
 root =Tk()
 root.option_add("*Font",("Pixel LCD-7",15,'bold'))
 root.geometry("750x780")
+root.resizable(0,0)
+root.title("PASSWORD GENERATOR")
+root.configure(background="#262335")
 
 #header frame
 frametop = Frame(root, background="#262335")
@@ -42,17 +45,10 @@ framebottom = Frame(root,background="#262335")
 framebottom.grid(row=4,column=0, columnspan=5)
 
 
-#icon กะว่าจะขอให้เวลาจารย์เช็คโปรแกรมก็ให้โหลดลง download ละชื่อโฟลเดอร์เราคือ password_generator แต่ถ้ายุ่งมากก็ลบไอคอนได้เลย
-root.iconbitmap('Downloads\\password_generator\\password.ico')
-root.resizable(0,0)
-root.title("PASSWORD GENERATOR")
-root.configure(background="#262335")
-
 #line
 canvas = Canvas(framemid, width=10, height=155, background='white').pack()
 canvas1 = Canvas(framemid1, width=10, height=160, background='white').pack()
 canvas2 = Canvas(framemid2, width=10, height=165, background='white').pack()
-
 
 
 #heading
@@ -108,7 +104,6 @@ def Generator():
 
 ###button
 Button(frameleft2, text = "GENERATE PASSWORD" , command = Generator, font =('8BIT WONDER',12), fg="#ffffff", background='#689fe4').pack(pady= 10)
-
 Entry(frameleft2 , textvariable = pass_str, fg="red", font =('Nerko One',20)).pack(pady=10)
 
 ########function to copy
@@ -191,6 +186,7 @@ pass_len1 = IntVar()
 Spinbox(frameright1, from_ = 8, to_ = 32 , textvariable = pass_len1 , width = 15, font="arial 15 bold").pack(pady=5)
 
 #edit password
+Label(frameright2, text ='FILL THE KEYWORDS', font =('8BIT WONDER',12), fg="#31ffec", background='#262335').pack(padx=10)
 Entry(frameright2 , fg="red", font =('Nerko One',20), textvariable = old_pass).pack(pady=10)
 Button(frameright2, text = "GENERATE PASSWORD" , command = Edit, font =('8BIT WONDER',12), fg="#ffffff", background='#689fe4').pack(pady= 10)
 Entry(frameright3 , textvariable = newpass_str, fg="red", font =('Nerko One',20)).pack(pady=10)
