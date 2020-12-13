@@ -51,7 +51,7 @@ framebottom.grid(row=4,column=0, columnspan=5)
 
 
 #icon กะว่าจะขอให้เวลาจารย์เช็คโปรแกรมก็ให้โหลดลง download ละชื่อโฟลเดอร์เราคือ password_generator แต่ถ้ายุ่งมากก็ลบไอคอนได้เลย
-#root.iconbitmap('Downloads\\password_generator\\password.ico')
+root.iconbitmap('Downloads\\password_generator\\password.ico')
 root.resizable(0,0)
 root.title("PASSWORD GENERATOR")
 root.configure(background="#262335")
