@@ -1,6 +1,7 @@
 # Python Password Generator
 ### **วิธีการเปิดโปรแกรม**
 สามารถดาวน์โหลดโปรแกรมได้จากลิงก์ใต้นี้ได้เลยค่ะ
+https://drive.google.com/drive/folders/1JBD9ZvQqnJp1lbzVueASIti7OwnGXfIa?usp=sharing
 
 ### **เหตุผลที่เลือกทำ Project นี้คืออะไร**
 1. รหัสผ่านมีความคาดเดาได้ยาก เมื่อเทียบกับที่เราตั้งเอง
